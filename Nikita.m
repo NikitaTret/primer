@@ -83,12 +83,7 @@ x=A-B;
 set(handles.text4,'String',num2str(x), 'Visible', 'On')
 
 
-% Транспонирование A in pushbutton4.
-function pushbutton4_Callback(hObject, eventdata, handles)
-%n=get(handles.popupmenu1,'Value');
-A=get(handles.uitable1,'Data');
-x=A.';
-set(handles.text4,'String',num2str(x),'Visible', 'On')
+
 
 
 % Обратная A pushbutton5.
