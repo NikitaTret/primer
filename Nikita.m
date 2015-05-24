@@ -22,14 +22,7 @@ function varargout = Nikita_OutputFcn(hObject, eventdata, handles)
 
 varargout{1} = handles.output;
 
-%Программирование выпадающего меню для первой матрицы, 
-%определение количества строк.
-function popupmenu1_Callback(hObject, eventdata, handles)
-set(handles.uitable1, 'Visible' ,'on');
-n=get(hObject,'Value');
-Dat=zeros(n+1,n+1);
-A=true(1,n+2);
-set(handles.uitable1,'Data',Dat,'ColumnEditable',A)
+
 
 
 
