@@ -1,4 +1,4 @@
-
+function varargout = Nikita(varargin)
 gui_State = struct('gui_Name',       mfilename, ...
                    'gui_Singleton',  gui_Singleton, ...
                    'gui_OpeningFcn', @Nikita_OpeningFcn, ...
@@ -98,3 +98,9 @@ x=inv(A);
 set(handles.text4,'String',num2str(x),'Visible', 'On')
 
 
+% Возведение в квадрат А pushbutton6.
+function pushbutton6_Callback(hObject, eventdata, handles)
+%n=get(handles.popupmenu1,'Value');
+A=get(handles.uitable1,'Data');
+x=A.^2;
+set(handles.text4,'String',num2str(x),'Visible', 'On')
