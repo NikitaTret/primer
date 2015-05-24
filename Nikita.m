@@ -23,8 +23,8 @@ function varargout = Nikita_OutputFcn(hObject, eventdata, handles)
 
 varargout{1} = handles.output;
 
-%Программирование выпадающего меню для первой матрицы, 
-%определение количества строк.
+%РџСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёРµ РІС‹РїР°РґР°СЋС‰РµРіРѕ РјРµРЅСЋ РґР»СЏ РїРµСЂРІРѕР№ РјР°С‚СЂРёС†С‹, 
+%РѕРїСЂРµРґРµР»РµРЅРёРµ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚СЂРѕРє.
 function popupmenu1_Callback(hObject, eventdata, handles)
 set(handles.uitable1, 'Visible' ,'on');
 n=get(hObject,'Value');
@@ -42,7 +42,7 @@ if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgr
 end
 
 
-%Определение количества столбцов для второй матрицы.
+%РћРїСЂРµРґРµР»РµРЅРёРµ РєРѕР»РёС‡РµСЃС‚РІР° СЃС‚РѕР»Р±С†РѕРІ РґР»СЏ РІС‚РѕСЂРѕР№ РјР°С‚СЂРёС†С‹.
 function popupmenu3_Callback(hObject2, eventdata, handles)
 set(handles.uitable2, 'Visible' ,'on');
 m=get(hObject2,'Value');
@@ -56,7 +56,7 @@ if ispc && isequal(get(hObject2,'BackgroundColor'), get(0,'defaultUicontrolBackg
     set(hObject,'BackgroundColor','white');
 end
 
-% Произведение
+% РџСЂРѕРёР·РІРµРґРµРЅРёРµ
 function pushbutton1_Callback(hObject, eventdata, handles)
 %n=get(handles.popupmenu1,'Value');
 A=get(handles.uitable1,'Data');
@@ -65,7 +65,7 @@ x=A*B;
 set(handles.text4,'String',num2str(x), 'Visible', 'On')
 
 
-% Сложение pushbutton2.
+% РЎР»РѕР¶РµРЅРёРµ pushbutton2.
 function pushbutton2_Callback(hObject, eventdata, handles)
 %n=get(handles.popupmenu1,'Value');
 A=get(handles.uitable1,'Data');
@@ -74,7 +74,7 @@ x=A+B;
 set(handles.text4,'String',num2str(x), 'Visible', 'On')
 
 
-% Вычитание pushbutton3.
+% Р’С‹С‡РёС‚Р°РЅРёРµ pushbutton3.
 function pushbutton3_Callback(hObject, eventdata, handles)
 %n=get(handles.popupmenu1,'Value');
 A=get(handles.uitable1,'Data');
@@ -83,7 +83,7 @@ x=A-B;
 set(handles.text4,'String',num2str(x), 'Visible', 'On')
 
 
-% Транспонирование A in pushbutton4.
+% РўСЂР°РЅСЃРїРѕРЅРёСЂРѕРІР°РЅРёРµ A in pushbutton4.
 function pushbutton4_Callback(hObject, eventdata, handles)
 %n=get(handles.popupmenu1,'Value');
 A=get(handles.uitable1,'Data');
@@ -91,7 +91,7 @@ x=A.';
 set(handles.text4,'String',num2str(x),'Visible', 'On')
 
 
-% Обратная A pushbutton5.
+% РћР±СЂР°С‚РЅР°СЏ A pushbutton5.
 function pushbutton5_Callback(hObject, eventdata, handles)
 %n=get(handles.popupmenu1,'Value');
 A=get(handles.uitable1,'Data');
@@ -99,7 +99,7 @@ x=inv(A);
 set(handles.text4,'String',num2str(x),'Visible', 'On')
 
 
-% Возведение в квадрат А pushbutton6.
+% Р’РѕР·РІРµРґРµРЅРёРµ РІ РєРІР°РґСЂР°С‚ Рђ pushbutton6.
 function pushbutton6_Callback(hObject, eventdata, handles)
 %n=get(handles.popupmenu1,'Value');
 A=get(handles.uitable1,'Data');
